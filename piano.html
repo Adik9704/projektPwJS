@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Piano</title>
+    <link rel="stylesheet" href="main.css">
+      <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true">
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+     <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Strona projektowa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="piano.html"><i class="fas fa-music"></i> MusicGame <span class="sr-only">(current)</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fas fa-id-card"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <header>
+    <br>
+    <br>
+    
+  </header>
+
+    <div class="page-header">
+      <h1 class="title">Pianino</h1>
+    </div>
+    <p class="subtitle">Zabaw się i stwórz soundtrack do swojego ulubionego anime za pomoca pianina</p>
+    <div class="keys">
+      <!-- C4 -->
+      <div data-key="65" class="key">
+        <div class="key-wrapper">
+          <kbd>C</kbd>
+          <span class="sound">a</span>
+        </div>
+      </div>
+      <div class="key__black"></div>
+      <!-- D -->
+      <div data-key="83" class="key">
+        <div class="key-wrapper">
+          <kbd>D</kbd>
+          <span class="sound">s</span>
+        </div>
+      </div>
+      <div class="key__black"></div>
+      <!-- E -->
+      <div data-key="68" class="key border-right">
+        <div class="">
+          <kbd>E</kbd>
+          <span class="sound">d</span>
+        </div>
+      </div>
+      <!-- F -->
+      <div data-key="70" class="key">
+        <div class="key-wrapper">
+          <kbd>F</kbd>
+          <span class="sound">f</span>
+        </div>
+      </div>
+      <div class="key__black"></div>
+      <!-- G -->
+      <div data-key="74" class="key">
+        <div class="key-wrapper">
+          <kbd>G</kbd>
+          <span class="sound">j</span>
+        </div>
+      </div>
+      <div class="key__black"></div>
+      <!-- A -->
+      <div data-key="75" class="key">
+        <div class="key-wrapper">
+          <kbd>A</kbd>
+          <span class="sound">k</span>
+        </div>
+      </div>
+      <div class="key__black"></div>
+      <!-- B -->
+      <div data-key="76" class="key border-right">
+        <div class="key-wrapper">
+          <kbd>B</kbd>
+          <span class="sound">l</span>
+        </div>
+      </div>
+      <!-- C5 -->
+      <div data-key="186" class="key">
+        <div class="key-wrapper">
+          <kbd>C</kbd>
+          <span class="sound">;</span>
+        </div>
+      </div>
+    </div>
+
+    <audio data-key="65" src="sounds/Piano.ff.C4.wav"></audio>
+    <audio data-key="83" src="sounds/Piano.ff.D4.wav"></audio>
+    <audio data-key="68" src="sounds/Piano.ff.E4.wav"></audio>
+    <audio data-key="70" src="sounds/Piano.ff.F4.wav"></audio>
+    <audio data-key="74" src="sounds/Piano.ff.G4.wav"></audio>
+    <audio data-key="75" src="sounds/Piano.ff.A4.wav"></audio>
+    <audio data-key="76" src="sounds/Piano.ff.B4.wav"></audio>
+    <audio data-key="186" src="sounds/Piano.ff.C5.wav"></audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+

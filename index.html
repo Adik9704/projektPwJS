@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Projekt z PWJS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true">
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Strona projektowa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="piano.html"><i class="fas fa-music"></i> MusicGame <span class="sr-only">(current)</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fas fa-id-card"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Strona o anime</h1>
+          <p class="lead mb-5 text-white-50">Anime to nie same bajki dla dzieci. To również świetna rozrywka dla dorosłych. Istnieje wiele świetnych seriali, które mogą zachwycić zarówno fanów horroru i romansu.
+
+Jeśli jeszcze nigdy nie widzieliście żadnego anime, to najwyższy czas to zmienić! Istnieje wiele genialnych tytułów, które mogą przekonać do siebie nawet tych najbardziej niechętnych.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slider -->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/db.jpg" style="width:100%">
+  <img class="mySlides" src="img/bleach1.jpg" style="width:100%">
+  <img class="mySlides" src="img/dbs.jpg" style="width:100%">
+  <img class="mySlides" src="img/onepiece.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/op.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">One Piece</h4>
+            <p class="card-text">One Piece opowiada o przygodach pirackiej załogi Słomkowego Kapelusza, której kapitanem jest Monkey D. Luffy. Jego największym marzeniem jest odnalezienie najwspanialszego skarbu na świecie, One Piece, oraz stanie się Królem Piratów. Historia rozpoczyna się od zjedzenia (przez zabawny dość przypadek) przez Luffy'ego Gum-Gumowocu, który zmienia jego ciało w gumę.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://op.wbijam.pl/" target="_blank" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/bleach.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Bleach</h4>
+            <p class="card-text">Ma 15 lat, nazywa się Kurosaki Ichigo i jedyną rzeczą, która odróżnia go od swoich rówieśników są pomarańczowe włosy… oraz fakt, że widzi duchy. Jest to jednak dla niego coś normalnego i stara się wykorzystywać swój dar przez pomaganie zagubionym duszom.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://b.wbijam.pl/" target="_blank" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/db.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Seria opowiada o kolejnych przygodach Son Gokū i jego przyjaciół. Bohaterowie stają się coraz silniejsi i muszą stawiać czoła coraz to silniejszym przeciwnikom.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://strefadb.pl/odcinki/dragon-ball-super.html" target="_blank" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
